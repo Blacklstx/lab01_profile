@@ -23,7 +23,7 @@
 เพราะการเพิ่มค่าตัวแปร `_likes` เพียงอย่างเดียวจะเปลี่ยนแค่ค่าในหน่วยความจำ แต่ Flutter จะไม่รู้ว่าต้องวาดหน้าจอใหม่ การครอบด้วย `setState(() { _likes++; })` เป็นการแจ้ง Framework ว่า State เปลี่ยนแล้ว ให้เรียก `build()` ใหม่เพื่ออัปเดตตัวเลขบนหน้าจอ
 
 **ตัวอย่าง Commit (`25d7cc1` - `feat: add About me page with Like button`):**
-- แก้ไขไฟล์ `lib/main.dart` เพิ่มหน้าโปรไฟล์ที่มี AppBar แสดงรหัสนักศึกษา `Lab L1 · 67121913🧑`
+- แก้ไขไฟล์ `lib/main.dart` เพิ่มหน้าโปรไฟล์ที่มี AppBar แสดงรหัสนักศึกษา `Lab L1 · 67121913`
 - แสดงไอคอน `Icons.person`, ชื่อ `Nattasit Tinawong - 67121913`, ข้อความ `Likes: $_likes` และปุ่ม `Like` (`FilledButton`) ที่เรียก `_like()` เพื่อเพิ่มค่าด้วย `setState`
 
 ---
